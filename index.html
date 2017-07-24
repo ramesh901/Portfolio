@@ -3,62 +3,86 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
         <title>Ramesh Portfolio</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
     </head>
+    
     <body>
+        
         <!-- Header -->
-        <header class="container">
-            <a name=home></a>
-            <h1>Ramesh Thiagarajan</h1>
+        
+        <header class="primary-header container group">
+                        
+            <h1 class="logo"><a name=home>Ramesh Thiagarajan</a></h1>
             
-            <h3>Geekskool Student</h3>
+            <h3 class="tagline">Geekskool Student</h3>
                     
-            <nav>
+            <nav class="nav primary-nav">
                 <a href="#home">Home</a>
                 <a href="#experience">Experience</a>
                 <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact Me</a>
+                <a href="#Contact">Contact</a>
             </nav>
             
         </header>
         
         <section class="hero container">
-            <p>Self-taught web developer</p>
-            <p>I have done three projects in <strong>Geekskool</strong> using Python 3</p>
+            
+            <h2>Self-taught web developer</h2>
+            
+            <p>After working 12 years in IT Service Industry,I want to restart my career to the craft of building websites.My Github account says it all.</p>
+            
         </section>
         
-        <section class="containter">
+        <section class="grid">
             <a name=experience></a>
+            <!-- Skills -->
+            <section class="col-1-2">
             <h5>Skills</h5>
-            <p>Python</p>
-            <p>Javascript</p>
-            <p>Express JS</p>
-            <p>Node JS</p>
-            <p>MongoDB</p>
-            <p>HTML and CSS</p>
-        </section>
-        <section>
+            <p>Python <br> Javascript <br> Express JS <br> Node JS <br> 
+            MongoDB <br> HTML and CSS</p>
+            </section><!--
+
+        Experience
+
+        --><section class="col-1-2">
             <h5>Experience</h5>
             <h3>2005 - Cognizant Techonology Solution</h3>
             <h3>2017 - Geekskool</h3>
         </section>
+        </section>
         
-        <section class="container">
+        <section class="row">
+            <div class="grid">
             <a name=projects></a>
             <h5>Projects</h5>
+            <!-- JSON Parser -->
+            <section class="teaser col-1-3">
             <a href="https://github.com/ramesh901/JSONParser" target="_blank">
             <h3>JSON Parser</h3></a>
             <p>This project will parse the JSON file</p>
+            </section><!--
+
+            Lisp Interpreter
+
+            --><section class="teaser col-1-3">
             <a href="https://github.com/ramesh901/LISP-Interpreter" target="_blank">
             <h3>Lisp Interpreter</h3></a>
             <p>This project will interpret List Statements and expressions</p>
+            </section ><!--
+
+            Dynamic Web Page
+
+            --><section class="teaser col-1-3">
             <a href="https://github.com/ramesh901/Dynamic_Web_Page" target="_blank">
             <h3>Dynamic Web Page</h3></a>
             <p>The path entered in the website will be displayed in the webpage dynamically</p>
+            </section>
+            </div>
         </section>
         
-        <section class="containter">
+        <section class="grid">
             <a name=contact></a>
             <p>Mail: rameshinbox901@gmail.com</p>
             
@@ -67,14 +91,14 @@
             
         <!-- Footer -->
         
-        <footer class="container">
+        <footer class="primary-footer container group">
             
             <small>&copy;Ramesh Thiagarajan</small>
             
-            <nav>
+            <nav class="nav">
                 <a href="index.html">Home</a>
-                <a href="Projects.html">Projects</a>
-                <a href="Contact.html">Contact Me</a>
+                <a href="Projects.html">Projects</a>    
+                <a href="Contact.html">Contact</a>
             </nav>
             
         </footer>
